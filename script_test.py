@@ -26,7 +26,7 @@ while(True):
     df["VGER"].iloc[0] = df["VGER"].iloc[0] * random.randint(8, 12) / 10
 
     dictionary = dict(zip(df.keys(), df.values[0]))
-    doc_ref = db.collection(u'Usina').document(u'teste')
+    doc_ref = db.collection(u'usinas').document(u'teste1')
     doc_ref.set(dictionary)
 
     time.sleep(4)
